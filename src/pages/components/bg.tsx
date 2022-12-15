@@ -13,21 +13,14 @@ const BackGround = () => {
       1000
     );
 
-    function sphere(number: number) {
-      function random() {
-        return Math.floor(Math.random() * 30);
-      }
-      let a = 0;
-      while (a < number) {
-        const geometry = new THREE.SphereGeometry(4, 32, 16);
-        const material = new THREE.MeshNormalMaterial();
-        const sphere = new THREE.Mesh(geometry, material);
-        sphere.position.set(random(), random(), random());
-        scene.add(sphere);
-        a += 1;
-      }
-    }
-    sphere(15);
+    const geometry = new THREE.TorusGeometry(20, 3, 16, 40);
+    const material = new THREE.MeshBasicMaterial({
+      color: 0xe69138,
+      wireframe: true,
+    });
+    const torus = new THREE.Mesh(geometry, material);
+    scene.add(torus);
+
     const canvas = document.getElementById("ez");
     if (!canvas) return console.log("Can not find canvas");
     const renderer = new THREE.WebGLRenderer({ canvas });
@@ -45,11 +38,14 @@ const BackGround = () => {
     //background
     scene.background = new THREE.Color(0x6fa8dc);
     const animate = () => {
-      controls.update();
+      torus.rotation.x += 0.001;
+      torus.rotation.z += 0.001;
+
       renderer.render(scene, camera);
       window.requestAnimationFrame(animate);
     };
     animate();
+    controls.update();
   }, []);
   return (
     <>
