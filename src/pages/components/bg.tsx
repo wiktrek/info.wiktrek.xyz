@@ -26,6 +26,8 @@ const BackGround = () => {
     const boxMesh = new THREE.Mesh(cube, boxMaterial);
     scene.add(boxMesh);
     const controls = new OrbitControls(camera, renderer.domElement);
+    //background
+    scene.background = new THREE.Color(0x6fa8dc);
     const animate = () => {
       controls.update();
       renderer.render(scene, camera);
