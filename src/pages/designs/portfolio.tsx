@@ -11,9 +11,18 @@ const Design: NextPage = () => {
       </Head>
 
       <main className="">
-        <div className=" absolute mx-auto text-center">
-          <div className="h-36 w-56 rounded-2xl bg-slate-50">
-            <></>
+        <div className=" absolute flex h-screen w-screen items-center justify-center">
+          <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
+            <a>Some text about me</a>
+          </div>
+          <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
+            <a>Some text about me</a>
+          </div>
+          <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
+            <a>Some text about me</a>
+          </div>
+          <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
+            <a>Some text about me</a>
           </div>
         </div>
         <BackGround />

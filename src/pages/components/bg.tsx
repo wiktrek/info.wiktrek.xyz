@@ -34,7 +34,7 @@ const BackGround = () => {
     const boxMaterial = new THREE.MeshNormalMaterial();
     const boxMesh = new THREE.Mesh(cube, boxMaterial);
     scene.add(boxMesh);
-    const controls = new OrbitControls(camera, renderer.domElement);
+    // const controls = new OrbitControls(camera, renderer.domElement);
     //background
     scene.background = new THREE.Color(0x6fa8dc);
     const animate = () => {
@@ -45,7 +45,6 @@ const BackGround = () => {
       window.requestAnimationFrame(animate);
     };
     animate();
-    controls.update();
   }, []);
   return (
     <>
