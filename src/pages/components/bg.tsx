@@ -1,7 +1,7 @@
 // import Link from "next/link";
 import * as THREE from "three";
 import { useEffect } from "react";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 const BackGround = () => {
   useEffect(() => {
     const { Scene } = THREE;
@@ -30,10 +30,17 @@ const BackGround = () => {
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     ambientLight.castShadow = true;
     scene.add(ambientLight);
-    const cube = new THREE.BoxGeometry(16, 16, 16);
-    const boxMaterial = new THREE.MeshNormalMaterial();
-    const boxMesh = new THREE.Mesh(cube, boxMaterial);
-    scene.add(boxMesh);
+    function cube() {
+      const cube = new THREE.BoxGeometry(10, 10, 10);
+      const boxMaterial = new THREE.MeshNormalMaterial();
+      const boxMesh = new THREE.Mesh(cube, boxMaterial);
+      const [x, y, z] = Array(3)
+        .fill(undefined)
+        .map(() => THREE.MathUtils.randFloatSpread(100));
+      boxMesh.position.set(x as number, y as number, z as number);
+      return boxMesh;
+    }
+    scene.add(cube());
     // const controls = new OrbitControls(camera, renderer.domElement);
     //background
     scene.background = new THREE.Color(0x6fa8dc);
