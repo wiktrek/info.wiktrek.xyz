@@ -33,11 +33,37 @@ const Design: NextPage = () => {
                 className="mx-auto"
               />
             </div>
-            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
-              <a>Some text about me</a>
+            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center text-xl ">
+              <p className="text-3xl">wiktrek.xyz</p>
+              <p>My website</p>
+              <a target="_blank" rel="noreferrer" href="https://wiktrek.xyz">
+                Link
+              </a>
+              <Image
+                alt="next"
+                src="/next.png"
+                width="100"
+                height="50"
+                className="mx-auto"
+              />
             </div>
-            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
-              <a>Some text about me</a>
+            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center text-xl ">
+              <p className="text-3xl">wiktrekbot</p>
+              <p>Discord bot</p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/wiktrek/wiktrekbot"
+              >
+                Link
+              </a>
+              <Image
+                alt="discord"
+                src="/discord.png"
+                width="100"
+                height="50"
+                className="mx-auto"
+              />
             </div>
             <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
               <a>Some text about me</a>
