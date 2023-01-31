@@ -12,8 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <BackGround />
-        <div className="absolute left-[50%] top-[50%] items-center justify-center text-3xl text-white">
+        <div className="absolute flex h-screen w-screen items-center justify-center text-5xl text-white">
           <ul className="">
             <li>
               <Link href="/designs/portfolio">portfolio</Link>
@@ -26,6 +25,7 @@ const Home: NextPage = () => {
             </li>
           </ul>
         </div>
+        <BackGround />
       </main>
     </>
   );
