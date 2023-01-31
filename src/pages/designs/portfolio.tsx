@@ -17,7 +17,12 @@ const Design: NextPage = () => {
             <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
               <a className="text-3xl">Rust</a>
               <p className="text-xl">My rust repository</p>
-              <a className="text-xl" href="https://github.com/wiktrek/rust">
+              <a
+                className="text-xl"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/wiktrek/rust"
+              >
                 Link
               </a>
               <Image
