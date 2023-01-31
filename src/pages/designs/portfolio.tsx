@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import BackGround from "../components/bg";
 const Design: NextPage = () => {
   return (
@@ -12,17 +13,30 @@ const Design: NextPage = () => {
 
       <main className="">
         <div className=" absolute flex h-screen w-screen items-center justify-center">
-          <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
-            <a>Some text about me</a>
-          </div>
-          <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
-            <a>Some text about me</a>
-          </div>
-          <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
-            <a>Some text about me</a>
-          </div>
-          <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
-            <a>Some text about me</a>
+          <div className="grid grid-cols-4 items-center gap-16 object-center">
+            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
+              <a className="text-3xl">Rust</a>
+              <p className="text-xl">My rust repository</p>
+              <a className="text-xl" href="https://github.com/wiktrek/rust">
+                Link
+              </a>
+              <Image
+                alt="rust"
+                src="/rust.png"
+                width="100"
+                height="50"
+                className="mx-auto"
+              />
+            </div>
+            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
+              <a>Some text about me</a>
+            </div>
+            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
+              <a>Some text about me</a>
+            </div>
+            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
+              <a>Some text about me</a>
+            </div>
           </div>
         </div>
         <BackGround />
