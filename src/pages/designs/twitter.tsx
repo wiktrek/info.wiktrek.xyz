@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import BackGround from "../components/bg";
+import Image from "next/image";
 const Design: NextPage = () => {
   return (
     <>
@@ -13,10 +13,10 @@ const Design: NextPage = () => {
       <main className="">
         <div>
           <div>
+            <Image alt="next" src="/next.png" width="100" height="50" />
             <a>Message</a>
           </div>
         </div>
-        <BackGround />
       </main>
     </>
   );
