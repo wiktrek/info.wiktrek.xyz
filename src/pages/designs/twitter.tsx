@@ -10,10 +10,10 @@ const Design: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
-        <div>
-          <div>
-            <Image alt="next" src="/next.png" width="100" height="50" />
+      <main className="h-screen w-screen bg-black">
+        <div className="flex items-center justify-center">
+          <div className=" bg-[080808] text-white">
+            <Image alt="next" src="/rust.png" width="20" height="20" />
             <a>Message</a>
           </div>
         </div>
