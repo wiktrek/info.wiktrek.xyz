@@ -12,8 +12,12 @@ const Twitter: NextPage = () => {
 
       <main className="h-screen w-screen bg-black">
         <div className="flex items-center justify-center">
+          <div>
+            <input className="" />
+          </div>
+
           <div className=" bg-[080808] text-2xl text-white">
-            <div className=" float-left">
+            <div className="">
               <Image alt="next" src="/rust.png" width="40" height="40" />
               <a>Author</a>
             </div>
