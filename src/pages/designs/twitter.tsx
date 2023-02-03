@@ -1,7 +1,26 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
 const Twitter: NextPage = () => {
+  const [input, setInput] = useState("");
+  interface Tweet {
+    createdAt: string;
+    tweet: string;
+  }
+  interface User {
+    name: string;
+    image: string;
+    Tweet: Tweet;
+  }
+  const user: User = {
+    name: "user",
+    image: "/rust.png",
+    Tweet: {
+      createdAt: "Today",
+      tweet: "Tweet",
+    },
+  };
   return (
     <>
       <Head>
@@ -13,15 +32,22 @@ const Twitter: NextPage = () => {
       <main className="h-screen w-screen bg-black">
         <div className="flex items-center justify-center">
           <div>
-            <input className="" />
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
           </div>
-
-          <div className=" bg-[080808] text-2xl text-white">
+          <div>
+            <a className="text-white">{input}</a>
+          </div>
+          <div className=" flex items-center justify-center bg-[080808] text-center text-2xl text-white">
             <div className="">
-              <Image alt="next" src="/rust.png" width="40" height="40" />
-              <a>Author</a>
+              <Image alt="next" src={user.image} width="40" height="40" />
+              <a>{user.name}</a>
             </div>
-            <a>Message</a>
+            <a>{user.Tweet.tweet}</a>
+            <a className="text-sm text-white">{user.Tweet.createdAt}</a>
           </div>
         </div>
       </main>

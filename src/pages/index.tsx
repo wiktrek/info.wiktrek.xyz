@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+
 import BackGround from "./components/bg";
 const Home: NextPage = () => {
   return (
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
               <Link href="/designs/portfolio">portfolio</Link>
             </li>
             <li>
-              <Link href="/designs/twitter">Twitter</Link>
+              <Link href="/designs/twitter">twitter</Link>
             </li>
             <li>
               <Link href="/designs/one">one</Link>
