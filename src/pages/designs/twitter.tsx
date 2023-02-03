@@ -41,7 +41,7 @@ const Twitter: NextPage = () => {
           <div>
             <a className="text-white">{input}</a>
           </div>
-          <div className=" flex items-center justify-center bg-[080808] text-center text-2xl text-white">
+          <div className=" flex items-center justify-center bg-blue-800 text-center text-2xl text-white">
             <div className="">
               <Image alt="next" src={user.image} width="40" height="40" />
               <a>{user.name}</a>
