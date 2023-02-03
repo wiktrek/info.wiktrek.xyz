@@ -18,6 +18,9 @@ const Home: NextPage = () => {
               <Link href="/designs/portfolio">portfolio</Link>
             </li>
             <li>
+              <Link href="/designs/twitter">Twitter</Link>
+            </li>
+            <li>
               <Link href="/designs/one">one</Link>
             </li>
             <li>
