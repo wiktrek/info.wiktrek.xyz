@@ -29,7 +29,7 @@ const Twitter: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="h-screen w-screen bg-black">
+      <main className="bg- h-screen w-screen bg-slate-600">
         <div className="flex items-center justify-center">
           <div>
             <input
@@ -41,7 +41,7 @@ const Twitter: NextPage = () => {
           <div>
             <a className="text-white">{input}</a>
           </div>
-          <div className=" flex items-center justify-center bg-blue-800 text-center text-2xl text-white">
+          <div className=" flex items-center justify-center rounded-2xl border-4 border-slate-900 bg-slate-800 text-center text-2xl text-white">
             <div className="">
               <Image alt="next" src={user.image} width="40" height="40" />
               <a>{user.name}</a>
