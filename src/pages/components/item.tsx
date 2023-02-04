@@ -5,11 +5,11 @@ const Item = () => {
   return (
     <div>
       <div className="h-46 w-56 rounded-2xl bg-slate-800 text-white">
-        <a>Name</a>
-        <p>Last Name</p>
+        <a>Item name</a>
+        <a>Price</a>
         <Image
           alt="info.wiktrek.xyz"
-          src="/image.png"
+          src="/shop.png"
           width="80"
           height="50"
           className="mx-auto"
