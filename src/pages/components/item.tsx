@@ -14,7 +14,7 @@ const Item = () => {
           height="50"
           className="mx-auto"
         />
-        <button className="h-8 w-32 rounded font-bold ">Buy</button>
+        <button className="h-8 w-32 rounded bg-slate-600 font-bold">Buy</button>
       </div>
     </div>
   );
