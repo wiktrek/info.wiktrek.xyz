@@ -13,7 +13,19 @@ const Design: NextPage = () => {
 
       <main className="">
         <div className="absolute mx-auto text-center">
-          <Item />
+          <div className="flex">
+            <div className="grid">
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+            </div>
+          </div>
         </div>
         <BackGround />
       </main>
