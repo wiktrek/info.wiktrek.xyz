@@ -5,8 +5,8 @@ const Item = () => {
   return (
     <div>
       <div className="h-46 w-56 rounded-2xl bg-slate-800 text-white">
-        <a>Item name</a>
-        <a>Price</a>
+        <p>Item name</p>
+        <p>Price</p>
         <Image
           alt="info.wiktrek.xyz"
           src="/shop.png"

@@ -13,8 +13,8 @@ const Design: NextPage = () => {
 
       <main className="">
         <div className="absolute mx-auto text-center">
-          <div className="flex">
-            <div className="grid">
+          <div className="mx-auto flex h-screen w-screen items-center justify-center text-center">
+            <div className="grid grid-cols-4 gap-4">
               <Item />
               <Item />
               <Item />
