@@ -1,7 +1,7 @@
 // import Link from "next/link";
 // import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import Image from "next/image";
-const Person = () => {
+const Item = () => {
   return (
     <div>
       <div className="h-46 w-56 rounded-2xl bg-slate-800 text-white">
@@ -22,4 +22,4 @@ const Person = () => {
   );
 };
 
-export default Person;
+export default Item;

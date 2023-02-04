@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import BackGround from "../components/bg";
+import Item from "../components/item";
 const Design: NextPage = () => {
   return (
     <>
@@ -12,9 +13,8 @@ const Design: NextPage = () => {
 
       <main className="">
         <div className="absolute mx-auto text-center">
-          <a>Two</a>
+          <Item />
         </div>
-
         <BackGround />
       </main>
     </>
