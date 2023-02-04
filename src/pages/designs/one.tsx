@@ -1,6 +1,8 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+// import Image from "next/image";
 import BackGround from "../components/bg";
+import Person from "../components/person";
 const Design: NextPage = () => {
   return (
     <>
@@ -12,12 +14,20 @@ const Design: NextPage = () => {
 
       <main className="">
         <div className=" absolute mx-auto text-center">
-          <div className="h-36 w-56 rounded-2xl bg-slate-50">
-            <a>Name: Example</a>
-            <p>Last Name: Example</p>
-            <p>Picture</p>
+          <div className="mx-auto flex h-screen w-screen items-center justify-center text-center">
+            <div className="grid grid-cols-4 gap-4">
+              <Person />
+              <Person />
+              <Person />
+              <Person />
+              <Person />
+              <Person />
+              <Person />
+              <Person />
+            </div>
           </div>
         </div>
+
         <BackGround />
       </main>
     </>
