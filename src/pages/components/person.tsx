@@ -14,6 +14,10 @@ const Person = () => {
           height="50"
           className="mx-auto"
         />
+        <button className="h-8 w-32 rounded bg-blue-600 font-bold text-blue-400">
+          Add to friends
+        </button>
+        
       </div>
     </div>
   );
