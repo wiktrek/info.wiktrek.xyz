@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import Tool from "../components/tool";
 import BackGround from "../components/bg";
 const Design: NextPage = () => {
   return (
@@ -14,93 +14,36 @@ const Design: NextPage = () => {
       <main className="">
         <div className=" absolute flex h-screen w-screen items-center justify-center">
           <div className="grid grid-cols-4 items-center gap-16 object-center">
-            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center ">
-              <a className="text-3xl">Rust</a>
-              <p className="text-xl">My rust repository</p>
-              <a
-                className="text-xl"
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/wiktrek/rust"
-              >
-                Link
-              </a>
-              <Image
-                alt="rust"
-                src="/rust.png"
-                width="100"
-                height="50"
-                className="mx-auto"
-              />
-            </div>
-            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center text-xl ">
-              <p className="text-3xl">wiktrek.xyz</p>
-              <p>My website</p>
-              <a target="_blank" rel="noreferrer" href="https://wiktrek.xyz">
-                Link
-              </a>
-              <Image
-                alt="next"
-                src="/next.png"
-                width="100"
-                height="50"
-                className="mx-auto"
-              />
-            </div>
-            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center text-xl ">
-              <p className="text-3xl">wiktrekbot</p>
-              <p>Discord bot</p>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/wiktrek/wiktrekbot"
-              >
-                Link
-              </a>
-              <Image
-                alt="discord"
-                src="/discord.png"
-                width="100"
-                height="50"
-                className="mx-auto"
-              />
-            </div>
-            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center text-xl ">
-              <p className="text-3xl">info.wiktrek.xyz</p>
-              <p>More projects</p>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://info.wiktrek.xyz"
-              >
-                Link
-              </a>
-              <Image
-                alt="info.wiktrek.xyz"
-                src="/next.png"
-                width="100"
-                height="50"
-                className="mx-auto"
-              />
-            </div>
-            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center text-xl ">
-              <p className="text-3xl">svelte.wiktrek.xyz</p>
-              <p>More projects </p>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://svelte.wiktrek.xyz"
-              >
-                Link
-              </a>
-              <Image
-                alt="info.wiktrek.xyz"
-                src="/svelte.png"
-                width="100"
-                height="50"
-                className="mx-auto"
-              />
-            </div>
+            <Tool
+              name={"wiktrek.xyz"}
+              description={"my website"}
+              url={"https://wiktrek.xyz"}
+              img={"/next.png"}
+            />
+            <Tool
+              name={"rust"}
+              description={"my rust repository"}
+              url={"https://github.com/wiktrek/rust"}
+              img={"/rust.png"}
+            />
+            <Tool
+              name={"wiktrekbot"}
+              description={"Discord bot"}
+              url={"https://github.com/wiktrek/wiktrekbot"}
+              img={"/discord.png"}
+            />
+            <Tool
+              name={"info.wiktrek.xyz"}
+              description={"another website"}
+              url={"https://info.wiktrek.xyz"}
+              img={"/next.png"}
+            />
+            <Tool
+              name={"svelte.wiktrek.xyz"}
+              description={"antoher website but made using svelte"}
+              url={"https://svelte.wiktrek.xyz"}
+              img={"/svelte.png"}
+            />
           </div>
         </div>
         <BackGround />
