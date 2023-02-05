@@ -20,6 +20,18 @@ const Design: NextPage = () => {
               url={"https://nextjs.org/"}
               img={"/next.png"}
             />
+            <Tool
+              name={"rust"}
+              description={"rust"}
+              url={"https://www.rust-lang.org/"}
+              img={"/rust.png"}
+            />
+            <Tool
+              name={"typescript"}
+              description={"typescript"}
+              url={"https://www.typescriptlang.org/"}
+              img={"/typescript.png"}
+            />
           </div>
         </div>
         <BackGround />
