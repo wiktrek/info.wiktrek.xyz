@@ -89,7 +89,7 @@ const Design: NextPage = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://info.wiktrek.xyz"
+                href="https://svelte.wiktrek.xyz"
               >
                 Link
               </a>
