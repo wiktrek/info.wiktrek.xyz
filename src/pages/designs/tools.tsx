@@ -39,10 +39,10 @@ const Design: NextPage = () => {
               img={"/svelte.png"}
             />
             <Tool
-              name={"svelte"}
-              description={"svelte"}
-              url={"https://svelte.dev/"}
-              img={"/svelte.png"}
+              name={"react"}
+              description={"react"}
+              url={"https://reactjs.org/"}
+              img={"/react.png"}
             />
           </div>
         </div>
