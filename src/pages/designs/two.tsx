@@ -24,6 +24,9 @@ const Design: NextPage = () => {
               <Item />
               <Item />
               <Item />
+              <Item />
+              <Item />
+              <Item />
             </div>
           </div>
         </div>

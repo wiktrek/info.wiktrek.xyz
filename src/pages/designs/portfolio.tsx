@@ -83,6 +83,24 @@ const Design: NextPage = () => {
                 className="mx-auto"
               />
             </div>
+            <div className="h-64 w-72  rounded-2xl bg-slate-50 text-center text-xl ">
+              <p className="text-3xl">svelte.wiktrek.xyz</p>
+              <p>More projects </p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://info.wiktrek.xyz"
+              >
+                Link
+              </a>
+              <Image
+                alt="info.wiktrek.xyz"
+                src="/svelte.png"
+                width="100"
+                height="50"
+                className="mx-auto"
+              />
+            </div>
           </div>
         </div>
         <BackGround />
