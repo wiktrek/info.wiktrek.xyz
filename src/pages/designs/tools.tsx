@@ -32,6 +32,18 @@ const Design: NextPage = () => {
               url={"https://www.typescriptlang.org/"}
               img={"/typescript.png"}
             />
+            <Tool
+              name={"svelte"}
+              description={"svelte"}
+              url={"https://svelte.dev/"}
+              img={"/svelte.png"}
+            />
+            <Tool
+              name={"svelte"}
+              description={"svelte"}
+              url={"https://svelte.dev/"}
+              img={"/svelte.png"}
+            />
           </div>
         </div>
         <BackGround />
