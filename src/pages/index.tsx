@@ -27,6 +27,9 @@ const Home: NextPage = () => {
             <li>
               <Link href="/designs/two">two</Link>
             </li>
+            <li>
+              <Link href="/designs/tools">tools</Link>
+            </li>
           </ul>
         </div>
         <BackGround />
