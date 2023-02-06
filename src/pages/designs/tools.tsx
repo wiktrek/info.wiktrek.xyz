@@ -21,28 +21,29 @@ const Design: NextPage = () => {
               img={"/next.png"}
             />
             <Tool
-              name={"rust"}
-              description={"rust"}
-              url={"https://www.rust-lang.org/"}
-              img={"/rust.png"}
-            />
-            <Tool
               name={"typescript"}
               description={"typescript"}
               url={"https://www.typescriptlang.org/"}
               img={"/typescript.png"}
             />
             <Tool
-              name={"svelte"}
-              description={"svelte"}
-              url={"https://svelte.dev/"}
-              img={"/svelte.png"}
-            />
-            <Tool
               name={"react"}
               description={"react"}
               url={"https://reactjs.org/"}
               img={"/react.png"}
+            />
+            <Tool
+              name={"rust"}
+              description={"rust"}
+              url={"https://www.rust-lang.org/"}
+              img={"/rust.png"}
+            />
+
+            <Tool
+              name={"svelte"}
+              description={"svelte"}
+              url={"https://svelte.dev/"}
+              img={"/svelte.png"}
             />
           </div>
         </div>
