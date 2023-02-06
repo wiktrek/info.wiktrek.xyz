@@ -34,16 +34,12 @@ const Twitter: NextPage = () => {
           <div className="grid grid-cols-1 gap-20">
             <div className="h-32 w-96 rounded border-2 bg-black">
               <textarea
-                className="form-control roundedborder m-0 block
-                w-full border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700  
-                transition  ease-in-out focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none"
-                id="exampleFormControlTextarea1"
-                placeholder="Your message"
+                className="form-control roundedborder m-0 h-32
+                w-full resize-none border-solid bg-transparent bg-clip-padding px-3 py-1.5 text-base 
+                text-white  transition ease-in-out focus:bg-transparent focus:text-white focus:outline-none"
+                placeholder="What's happening?"
                 onChange={(e) => setInput(e.target.value)}
-              >
-                <input />
-                {input}
-              </textarea>
+              />
               <button className="h-12 w-12 rounded-xl bg-[#1a8cd8] font-bold text-[#e7f3fb]">
                 Send
               </button>
