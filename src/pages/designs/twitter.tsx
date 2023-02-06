@@ -18,7 +18,7 @@ const Twitter: NextPage = () => {
     image: "/rust.png",
     Tweet: {
       createdAt: "Today",
-      tweet: "Tweet",
+      tweet: `${input}`,
     },
   };
   return (
@@ -31,23 +31,26 @@ const Twitter: NextPage = () => {
 
       <main className="bg- h-screen w-screen bg-slate-600">
         <div className="flex items-center justify-center">
-          <div>
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-            />
-          </div>
-          <div>
-            <a className="text-white">{input}</a>
-          </div>
-          <div className=" flex items-center justify-center rounded-2xl border-4 border-slate-900 bg-slate-800 text-center text-2xl text-white">
-            <div className="">
-              <Image alt="next" src={user.image} width="40" height="40" />
-              <a>{user.name}</a>
+          <div className="grid grid-cols-1 gap-10">
+            <div className="h-32 w-[40rem]">
+              <input
+                className="h-32 w-[40rem]"
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+              />
+              <button className="h-12 w-12 rounded-xl bg-[#1a8cd8] font-bold text-[#e7f3fb]">
+                Send
+              </button>
             </div>
-            <a>{user.Tweet.tweet}</a>
-            <a className="text-sm text-white">{user.Tweet.createdAt}</a>
+            <div className=" flex w-[40rem] items-center justify-center rounded-2xl border-4 border-slate-900 bg-slate-800 text-center text-2xl text-white">
+              <div className="">
+                <Image alt="next" src={user.image} width="40" height="40" />
+                <a>{user.name}</a>
+              </div>
+              <a>{user.Tweet.tweet}</a>
+              <a className="text-sm text-white">{user.Tweet.createdAt}</a>
+            </div>
           </div>
         </div>
       </main>
