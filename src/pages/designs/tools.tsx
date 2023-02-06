@@ -27,6 +27,12 @@ const Design: NextPage = () => {
               img={"/typescript.png"}
             />
             <Tool
+              name={"tailwind"}
+              description={"tailwind"}
+              url={"https://tailwindcss.com/"}
+              img={"/tailwind.png"}
+            />
+            <Tool
               name={"react"}
               description={"react"}
               url={"https://reactjs.org/"}
