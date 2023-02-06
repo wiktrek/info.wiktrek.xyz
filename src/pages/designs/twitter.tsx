@@ -31,10 +31,10 @@ const Twitter: NextPage = () => {
 
       <main className="bg- h-screen w-screen bg-slate-600">
         <div className="flex items-center justify-center">
-          <div className="grid grid-cols-1 gap-10">
-            <div className="h-32 w-[40rem]">
+          <div className="grid grid-cols-1 gap-20">
+            <div className="h-32 w-96 rounded border-2 bg-black">
               <input
-                className="h-32 w-[40rem]"
+                className="h-32 w-96 border-transparent bg-transparent text-left text-white focus:outline-0"
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
@@ -43,7 +43,7 @@ const Twitter: NextPage = () => {
                 Send
               </button>
             </div>
-            <div className=" flex w-[40rem] items-center justify-center rounded-2xl border-4 border-slate-900 bg-slate-800 text-center text-2xl text-white">
+            <div className=" flex w-96 items-center justify-center rounded-2xl border-4 border-slate-900 bg-slate-800 text-center text-2xl text-white">
               <div className="">
                 <Image alt="next" src={user.image} width="40" height="40" />
                 <a>{user.name}</a>
