@@ -33,12 +33,17 @@ const Twitter: NextPage = () => {
         <div className="flex items-center justify-center">
           <div className="grid grid-cols-1 gap-20">
             <div className="h-32 w-96 rounded border-2 bg-black">
-              <input
-                className="h-32 w-96 border-transparent bg-transparent text-left text-white focus:outline-0"
-                type="text"
-                value={input}
+              <textarea
+                className="form-control roundedborder m-0 block
+                w-full border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700  
+                transition  ease-in-out focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none"
+                id="exampleFormControlTextarea1"
+                placeholder="Your message"
                 onChange={(e) => setInput(e.target.value)}
-              />
+              >
+                <input />
+                {input}
+              </textarea>
               <button className="h-12 w-12 rounded-xl bg-[#1a8cd8] font-bold text-[#e7f3fb]">
                 Send
               </button>
