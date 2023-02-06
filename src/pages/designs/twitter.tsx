@@ -15,7 +15,7 @@ const Twitter: NextPage = () => {
   }
   const user: User = {
     name: "user",
-    image: "/rust.png",
+    image: "/image.png",
     Tweet: {
       createdAt: "Today",
       tweet: `${input}`,
@@ -32,24 +32,25 @@ const Twitter: NextPage = () => {
       <main className="bg- h-screen w-screen bg-slate-600">
         <div className="flex items-center justify-center">
           <div className="grid grid-cols-1 gap-20">
-            <div className="h-32 w-96 rounded border-2 bg-black">
+            <div className="h-48 w-96 rounded border-2 bg-black">
+              <Image alt="image" src={user.image} width="40" height="40" />
               <textarea
-                className="form-control roundedborder m-0 h-32
-                w-full resize-none border-solid bg-transparent bg-clip-padding px-3 py-1.5 text-base 
+                className="form-control roundedborder m-0 h-24
+                w-full resize-none overflow-hidden border-solid bg-transparent bg-clip-padding px-3 py-1.5 text-base
                 text-white  transition ease-in-out focus:bg-transparent focus:text-white focus:outline-none"
                 placeholder="What's happening?"
                 onChange={(e) => setInput(e.target.value)}
               />
-              <button className="h-12 w-12 rounded-xl bg-[#1a8cd8] font-bold text-[#e7f3fb]">
-                Send
+              <button className="bottom-96 h-12 w-12 rounded-xl bg-[#1a8cd8] font-bold text-[#e7f3fb]">
+                Tweet
               </button>
             </div>
-            <div className=" flex w-96 items-center justify-center rounded-2xl border-4 border-slate-900 bg-slate-800 text-center text-2xl text-white">
+            <div className=" max-w-96 flex w-96 items-center justify-center rounded-2xl border-4 border-slate-900 bg-slate-800 text-center text-2xl text-white">
               <div className="">
                 <Image alt="next" src={user.image} width="40" height="40" />
                 <a>{user.name}</a>
               </div>
-              <a>{user.Tweet.tweet}</a>
+              <p className=" ">{user.Tweet.tweet}</p>
               <a className="text-sm text-white">{user.Tweet.createdAt}</a>
             </div>
           </div>
