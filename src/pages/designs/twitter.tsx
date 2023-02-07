@@ -25,7 +25,7 @@ const Twitter: NextPage = () => {
       image: "/image.png",
     },
     createdAt: "07.02.2023",
-    tweet: "Hi",
+    tweet: "hi",
   };
 
   return (
