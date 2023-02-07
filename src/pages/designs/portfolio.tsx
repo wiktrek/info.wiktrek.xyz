@@ -33,6 +33,12 @@ const Design: NextPage = () => {
               img={"/next.png"}
             />
             <Tool
+              name={"terminal"}
+              description={"terminal"}
+              url={"https://term.wiktrek.xyz"}
+              img={"/next.png"}
+            />
+            <Tool
               name={"rust"}
               description={"my rust repository"}
               url={"https://github.com/wiktrek/rust"}
