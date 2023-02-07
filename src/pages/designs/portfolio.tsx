@@ -27,9 +27,9 @@ const Design: NextPage = () => {
               img={"/next.png"}
             />
             <Tool
-              name={""}
-              description={"polls"}
-              url={"https://wiktrek.xyz/projects/poll"}
+              name={"link shortener"}
+              description={"link shortener"}
+              url={"https://wiktrek.xyz/projects/url"}
               img={"/next.png"}
             />
             <Tool
