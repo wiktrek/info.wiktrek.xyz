@@ -20,7 +20,7 @@ const Tweet = (props: props) => {
         <Image alt="next" src={props.tweet.user.image} width="40" height="40" />
         <a>{props.tweet.user.name}</a>
       </div>
-      <p className=" ">{props.tweet.tweet}</p>
+      <p className="">{props.tweet.tweet}</p>
       <a className="text-sm text-white">{props.tweet.createdAt}</a>
     </div>
   );

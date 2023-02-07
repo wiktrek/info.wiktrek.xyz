@@ -38,7 +38,7 @@ const Twitter: NextPage = () => {
 
       <main className="bg- h-screen w-screen bg-slate-600">
         <div className="flex items-center justify-center">
-          <div className="grid grid-cols-1 gap-20">
+          <div className="grid grid-cols-1 gap-2">
             <div className="h-48 w-96 rounded border-2 bg-black">
               <Image alt="image" src={user.image} width="40" height="40" />
               <textarea
@@ -53,6 +53,9 @@ const Twitter: NextPage = () => {
                 Tweet
               </button>
             </div>
+            <Tweet tweet={tweet} />
+            <Tweet tweet={tweet} />
+            <Tweet tweet={tweet} />
             <Tweet tweet={tweet} />
           </div>
         </div>
