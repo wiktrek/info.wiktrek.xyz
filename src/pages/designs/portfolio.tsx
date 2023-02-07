@@ -21,6 +21,18 @@ const Design: NextPage = () => {
               img={"/next.png"}
             />
             <Tool
+              name={"poll app"}
+              description={"polls"}
+              url={"https://wiktrek.xyz/projects/poll"}
+              img={"/next.png"}
+            />
+            <Tool
+              name={""}
+              description={"polls"}
+              url={"https://wiktrek.xyz/projects/poll"}
+              img={"/next.png"}
+            />
+            <Tool
               name={"rust"}
               description={"my rust repository"}
               url={"https://github.com/wiktrek/rust"}
