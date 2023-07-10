@@ -11,8 +11,8 @@ export default function Page() {
       </Head>
       <main className=" h-screen items-center justify-center text-center text-5xl  no-underline">
         <div>
-          <Link href="/afirmation" className="">
-            Afirmation
+          <Link href="/affirmation" className="">
+            Affirmation
           </Link>
           <Link href="/"></Link>
         </div>

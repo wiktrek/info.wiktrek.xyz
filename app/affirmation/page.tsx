@@ -14,7 +14,7 @@ export default async function Page() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="items-center justify-center text-center">
-        <a className=" text-red-400">{a.affirmation}</a>
+        <a className=" text-7xl text-red-400">{a.affirmation}</a>
       </main>
     </>
   );
