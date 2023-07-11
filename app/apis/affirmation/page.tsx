@@ -1,5 +1,4 @@
 import axios from "axios";
-import "../../styles/globals.css";
 import Text from "~/components/text";
 // import Link from "next/link";
 interface Affirmation {

@@ -1,6 +1,5 @@
 import axios, { type AxiosResponse } from "axios";
 import Text from "~/components/text";
-import "../../styles/globals.css";
 // import Link from "next/link";
 interface Joke {
   joke: string;

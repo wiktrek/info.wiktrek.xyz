@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Navbar from "~/components/navbar";
 
 export default function Page() {
   return (
@@ -10,12 +11,10 @@ export default function Page() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" h-screen items-center justify-center text-center text-6xl  no-underline">
+        <Navbar />
         <div className=" grid grid-cols-1">
-          <Link href="/apis" className="">
-            Apis
-          </Link>
-          <Link href="/stuff" className="">
-            Stuff
+          <Link href="/stuff/twitter" className="">
+            Twitter
           </Link>
         </div>
       </main>
