@@ -11,9 +11,10 @@ export default function Page() {
       </Head>
       <main className=" h-screen items-center justify-center text-center text-6xl  no-underline">
         <div className=" grid grid-cols-1">
-          <Link href="/apis" className="">
-            Apis
+          <Link href="/apis/affirmation" className="">
+            Affirmation
           </Link>
+          <Link href="/apis/dadjoke">Dad joke</Link>
         </div>
       </main>
     </>
