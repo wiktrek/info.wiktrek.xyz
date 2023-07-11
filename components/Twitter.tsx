@@ -7,7 +7,7 @@ interface Left {
 }
 export function TrendingComponent(trending: Trending) {
   return (
-    <div>
+    <div className=" items-center justify-center text-center">
       <p>{trending.text}</p>
       <p>{trending.tweets} Tweets</p>
     </div>
@@ -16,10 +16,10 @@ export function TrendingComponent(trending: Trending) {
 export function LeftComponent(props: Left) {
   const optionsarr: string[] = props.options.split(",");
   return (
-    <>
+    <div className=" text-left">
       {optionsarr.map((option) => {
         return <a key={option}>{option}</a>;
       })}
-    </>
+    </div>
   );
 }
