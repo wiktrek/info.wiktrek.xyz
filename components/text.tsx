@@ -9,7 +9,7 @@ export default function Text(props: Props) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="items-center justify-center text-center">
+      <main className="h-screen items-center justify-center text-center">
         <Navbar />
         <a className=" text-7xl text-red-400">{props.text}</a>
       </main>

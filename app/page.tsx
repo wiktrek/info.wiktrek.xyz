@@ -6,7 +6,7 @@ export default function Page() {
     <>
       <Head>
         <title>info - wiktrek.xyz</title>
-        <meta name="description" content="info - wiktrek.xyz" />
+        <meta name="description" content="random projects." />
       </Head>
       <main className=" h-screen items-center justify-center text-center text-6xl  no-underline">
         <div className=" grid grid-cols-1">

@@ -1,6 +1,5 @@
-import "./globals.css";
 export const metadata = {
-  title: "info - wiktrek.xyz",
+  title: "rating - wiktrek.xyz",
   description: "info.wiktrek.xyz",
 };
 

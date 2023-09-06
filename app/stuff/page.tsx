@@ -7,8 +7,8 @@ export default function Page() {
       <main className=" h-screen items-center justify-center text-center text-6xl  no-underline">
         <Navbar />
         <div className=" grid grid-cols-1">
-          <Link href="/stuff/" className="">
-            Stuff
+          <Link href="/stuff/rating" className="">
+            Rating
           </Link>
         </div>
       </main>
