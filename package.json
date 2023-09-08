@@ -1,43 +1,15 @@
 {
-  "name": "info",
-  "version": "0.1.0",
-  "private": true,
+  "name": "info.wiktrek.xyz",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "lint": "next lint",
-    "start": "next start"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.2",
-    "@fortawesome/free-regular-svg-icons": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@t3-oss/env-nextjs": "^0.3.1",
-    "axios": "^1.5.0",
-    "next": "^13.4.19",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "zod": "^3.22.2"
-  },
-  "devDependencies": {
-    "@types/eslint": "^8.44.2",
-    "@types/node": "^18.17.14",
-    "@types/prettier": "^2.7.3",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
-    "autoprefixer": "^10.4.15",
-    "eslint": "^8.48.0",
-    "eslint-config-next": "^13.4.19",
-    "postcss": "^8.4.29",
-    "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.2.8",
-    "tailwindcss": "^3.3.3",
-    "typescript": "^5.2.2"
-  },
-  "ct3aMetadata": {
-    "initVersion": "7.15.0"
+    "astro": "^3.0.12"
   }
 }
