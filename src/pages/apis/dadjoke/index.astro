@@ -1,0 +1,22 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import axios, { type AxiosResponse } from "axios";
+interface Joke {
+  joke: string;
+}
+const joke = (
+  (await axios({
+    url: "http://icanhazdadjoke.com",
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+    },
+  })) as AxiosResponse<Joke>
+).data.joke;
+---
+
+<Layout title="apis - wiktrek.xyz">
+  <div class="text-5xl justify-center text-center items-center">
+    <a>{joke}</a>
+  </div>
+</Layout>
