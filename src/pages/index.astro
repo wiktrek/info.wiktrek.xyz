@@ -1,12 +1,19 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "~/layouts/Layout.astro";
+import Api from "~/components/Api.astro";
 ---
 
 <Layout title="info - wiktrek.xyz">
-  <div class="text-5xl justify-center text-center items-center">
-    <p>Astro!</p>
-    <div class="text-[#ef2572]">
-      <a href="/apis ">Apis</a>
+  <div class="text-5xl justify-center text-center items-center flex">
+    <div
+      class="justify-center text-center items-center grid pt-96 grid-cols-3 gap-8"
+    >
+      <Api name="api" description="some description" />
+      <Api name="api" description="some description" />
+      <Api name="api" description="some description" />
+      <Api name="api" description="some description" />
+      <Api name="api" description="some description" />
+      <Api name="api" description="some description" />
     </div>
   </div>
 </Layout>
