@@ -8,16 +8,13 @@ import Api from "~/components/Api.astro";
 const apis: ApiType[] = [
   { name: "affirmation", description: "Gives random affirmation" },
   { name: "dad joke", description: "Gives a dadjoke" },
-  { name: "api", description: "description" },
-  { name: "api", description: "description" },
-  { name: "api", description: "description" },
 ];
 ---
 
 <Layout title="info - wiktrek.xyz">
   <div class="text-5xl justify-center text-center items-center flex">
     <div
-      class="justify-center text-center items-center grid pt-96 grid-cols-3 gap-8"
+      class="justify-center text-center items-center grid pt-96 grid-cols-3 gap-10"
     >
       {
         apis.map(({ name, description }) => {
