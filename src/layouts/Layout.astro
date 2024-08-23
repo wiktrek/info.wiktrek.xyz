@@ -1,28 +1,29 @@
 ---
-
 export interface Props {
-	title: string;
+  title: string;
 }
-
+import "~/styles/global.css";
+import Navbar from "~/components/NavBar.astro";
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-        <meta name="description" content="wiktrek's website" />
-		<meta
-          name="keywords"
-          content="wiktrek, wiktrek.xyz, wiktrek website, wiktor, wiktorek, xyz, wiktrek xyz, wiktor, wiktorek, wiktorek website, wiktor website, wiktrek.com, wiktrek.pl, wiktrek.org, wiktrek.net"
-        />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/favicon.svg" />
-		<link rel="sitemap" href="/sitemap-index.xml" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="bg-[#05080a] text-[#767dc1] scrollbar-none scroll-smooth">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="wiktrek's website" />
+    <meta
+      name="keywords"
+      content="wiktrek, wiktrek.xyz, wiktrek website, wiktor, wiktorek, xyz, wiktrek xyz, wiktor, wiktorek, wiktorek website, wiktor website, wiktrek.com, wiktrek.pl, wiktrek.org, wiktrek.net"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-background text-text scrollbar-none scroll-smooth text-2xl">
+    <Navbar />
+    <slot />
+  </body>
 </html>

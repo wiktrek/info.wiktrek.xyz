@@ -1,6 +1,17 @@
 ---
+interface ApiType {
+  name: string;
+  description: string;
+}
 import Layout from "~/layouts/Layout.astro";
 import Api from "~/components/Api.astro";
+const apis: ApiType[] = [
+  { name: "affirmation", description: "Gives random affirmation" },
+  { name: "dad joke", description: "Gives a dadjoke" },
+  { name: "api", description: "description" },
+  { name: "api", description: "description" },
+  { name: "api", description: "description" },
+];
 ---
 
 <Layout title="info - wiktrek.xyz">
@@ -8,12 +19,11 @@ import Api from "~/components/Api.astro";
     <div
       class="justify-center text-center items-center grid pt-96 grid-cols-3 gap-8"
     >
-      <Api name="api" description="some description" />
-      <Api name="api" description="some description" />
-      <Api name="api" description="some description" />
-      <Api name="api" description="some description" />
-      <Api name="api" description="some description" />
-      <Api name="api" description="some description" />
+      {
+        apis.map(({ name, description }) => {
+          return <Api name={name} description={description} />;
+        })
+      }
     </div>
   </div>
 </Layout>
